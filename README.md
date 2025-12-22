@@ -2,6 +2,9 @@
 Multi Agent Meeting Note Generator using LangGraph
 
 
+installed dependency --> python -m pip install langgraph langchain python-dotenv faster-whisper
+
+
 
 faster_whisper model [for audio transcribe]
 
