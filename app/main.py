@@ -1,10 +1,15 @@
-from agents.transcriber import transcribe_audio
+from agents.transcriber import TranscriptionAgent
+
+
+def main():
+    print("🎙️ Transcribing meeting audio...")
+
+    agent = TranscriptionAgent()
+    text = agent.run("data/sample.wav")
+
+    print("\n📝 Transcript:\n")
+    print(text)
+
 
 if __name__ == "__main__":
-    audio_path = "data/sample.wav"
-
-    print("Transcribing audio...")
-    text = transcribe_audio(audio_path)
-
-    print("\n--- TRANSCRIPTION OUTPUT ---\n")
-    print(text)
+    main()
