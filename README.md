@@ -14,11 +14,11 @@ faster_whisper model [for audio transcribe]
 Architecture:
 Audio
   ↓
-Transcriber Agent
+Transcriber Agent (faster_whisper)
   ↓
 Cleaner Agent
   ↓
-Summarizer Agent
+Summarizer Agent (LLM)
   ↓
 Action Items Agent
   ↓
