@@ -6,8 +6,18 @@ class ActionItemsAgent:
         actions = []
         lines = re.split(r"[.]", text)
 
+        keywords = [
+            "need to",
+            "should",
+            "will",
+            "let's",
+            "we have to",
+            "plan to",
+            "decide to",
+        ]
+
         for line in lines:
-            if any(word in line for word in ["need to", "should", "will", "action"]):
+            if any(k in line for k in keywords):
                 actions.append(line.strip())
 
         return actions
